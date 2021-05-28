@@ -31,7 +31,6 @@ class SaveViewController: BaseViewController {
     //MARK: Button Action
     @objc func saveBtnAction() {
         let state = stateTextField.text?.capitalized
-//        cmObj.state = state!.isEmpty ? "placeholder" : state
         if nameTextField.text?.count == 0 {
             showAlert(title: "Alert", message: "Enter name", vc: self)
         } else {
